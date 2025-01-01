@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #222;
+}
+
+.card {
+    margin: 200px auto 0;
+
+    max-width: 470px;
+    padding: 40px 35px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.search-box input {
+    height: 60px;
+    flex: 1;
+    margin-right: 15px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    padding-left:45px;
+    transition: 0.3s;
+    width: 100%;
+}
+.search-box input::placeholder {
+    color: #222;
+}
+
+.icon-loc {
+    width: 15px;
+    position: absolute;
+    left: 20px;
+}
+.search-box input:focus {
+    padding-left: 25px;
+}
+.search-box input:focus + .icon-loc {
+    display: none;
+}
+
+
+.search-box .image {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+.search-box .image img {
+    width: 20px;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.result .board img{
+    width: 200px;
+}
+
+.result .board .temp {
+    font-size: 80px;
+    font-weight: normal;
+    
+}
+
+.result .board h3 {
+    font-size: 45px;
+}
+
+.result .atmosphere {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.result .atmosphere .col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.result .atmosphere .col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+.error {
+    padding: 10px;
+    color: #7a0c0c;
+    text-align: left;
+    font-weight: bold;
+    display: none;
+}
